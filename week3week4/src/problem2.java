@@ -19,7 +19,6 @@ class Client {
 
 public class problem2 {
 
-    // 🔹 Bubble Sort (Ascending by riskScore)
     public static void bubbleSort(Client[] arr) {
         int n = arr.length;
         int swaps = 0;
@@ -37,7 +36,6 @@ public class problem2 {
                     swaps++;
                     swapped = true;
 
-                    // visualize swap
                     System.out.println("Swap: " + arr[j].name + " <-> " + arr[j + 1].name);
                 }
             }
@@ -49,7 +47,6 @@ public class problem2 {
         System.out.println("Total Swaps: " + swaps);
     }
 
-    // 🔹 Insertion Sort (Descending by riskScore + accountBalance)
     public static void insertionSort(Client[] arr) {
         for (int i = 1; i < arr.length; i++) {
             Client key = arr[i];
@@ -65,7 +62,6 @@ public class problem2 {
         System.out.println("\nInsertion Sort (Descending): " + Arrays.toString(arr));
     }
 
-    // 🔹 Comparator: riskScore DESC, then accountBalance DESC
     private static int compare(Client c1, Client c2) {
         if (c1.riskScore != c2.riskScore) {
             return Integer.compare(c1.riskScore, c2.riskScore);
@@ -73,7 +69,6 @@ public class problem2 {
         return Double.compare(c1.accountBalance, c2.accountBalance);
     }
 
-    // 🔹 Top N highest risk clients
     public static void topRiskClients(Client[] arr, int topN) {
         System.out.print("\nTop " + topN + " High-Risk Clients: ");
 

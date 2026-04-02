@@ -132,7 +132,6 @@ public class problem5 {
 
         int index = binarySearch(logs, target);
 
-        // 🔹 Count occurrences
         int count = countOccurrences(logs, target);
         System.out.println("Total Occurrences of " + target + ": " + count);
 

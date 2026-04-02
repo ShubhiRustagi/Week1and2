@@ -19,7 +19,6 @@ class Asset {
 
 public class problem4 {
 
-    // 🔹 Merge Sort (Stable, Ascending by returnRate)
     public static void mergeSort(Asset[] arr, int left, int right) {
         if (left < right) {
             int mid = (left + right) / 2;
@@ -59,7 +58,6 @@ public class problem4 {
         while (j < n2) arr[k++] = R[j++];
     }
 
-    // 🔹 Quick Sort (Hybrid)
     public static void quickSort(Asset[] arr, int low, int high) {
         if (low < high) {
 

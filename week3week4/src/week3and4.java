@@ -57,7 +57,6 @@ public class week3and4 {
 
         System.out.println("\nInsertion Sort (fee + timestamp): " + list);
     }
-
     private static int compare(Transaction t1, Transaction t2) {
         if (t1.fee != t2.fee) {
             return Double.compare(t1.fee, t2.fee);
@@ -82,7 +81,6 @@ public class week3and4 {
         System.out.println();
     }
 
-    // 🔹 Main method with user input
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<Transaction> transactions = new ArrayList<>();
