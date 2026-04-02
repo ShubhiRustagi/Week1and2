@@ -170,10 +170,8 @@ public class problem3 {
         };
 
         mergeSort(morning, 0, morning.length - 1);
-        mergeSort(afternoon, 0, afternoon.length - 1);
-
+        mergeSort
         Trade[] merged = mergeTwoSorted(morning, afternoon);
-
         System.out.println("Merged Morning + Afternoon: " + Arrays.toString(merged));
 
         // 🔹 Total Volume

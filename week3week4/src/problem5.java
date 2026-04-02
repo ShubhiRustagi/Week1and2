@@ -134,7 +134,6 @@ public class problem5 {
 
         int count = countOccurrences(logs, target);
         System.out.println("Total Occurrences of " + target + ": " + count);
-
         sc.close();
     }
 }

@@ -16,7 +16,6 @@ class Transaction {
         return id + ":" + fee + "@" + timestamp;
     }
 }
-
 public class week3and4 {
 
     public static void bubbleSort(List<Transaction> list) {

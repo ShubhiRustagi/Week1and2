@@ -10,7 +10,6 @@ class Asset {
         this.returnRate = returnRate;
         this.volatility = volatility;
     }
-
     @Override
     public String toString() {
         return name + ":" + returnRate + "%";
@@ -29,7 +28,6 @@ public class problem4 {
             merge(arr, left, mid, right);
         }
     }
-
     public static void merge(Asset[] arr, int left, int mid, int right) {
         int n1 = mid - left + 1;
         int n2 = right - mid;

@@ -10,7 +10,6 @@ class Client {
         this.riskScore = riskScore;
         this.accountBalance = accountBalance;
     }
-
     @Override
     public String toString() {
         return name + ":" + riskScore;
@@ -22,7 +21,6 @@ public class problem2 {
     public static void bubbleSort(Client[] arr) {
         int n = arr.length;
         int swaps = 0;
-
         for (int i = 0; i < n - 1; i++) {
             boolean swapped = false;
 
