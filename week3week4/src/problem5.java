@@ -2,7 +2,6 @@ import java.util.*;
 
 public class problem5 {
 
-    // 🔹 Linear Search - First Occurrence
     public static int linearFirst(String[] arr, String target) {
         int comparisons = 0;
 
@@ -20,7 +19,6 @@ public class problem5 {
         return -1;
     }
 
-    // 🔹 Linear Search - Last Occurrence
     public static int linearLast(String[] arr, String target) {
         int comparisons = 0;
         int index = -1;
@@ -37,7 +35,6 @@ public class problem5 {
         return index;
     }
 
-    // 🔹 Binary Search (any one occurrence)
     public static int binarySearch(String[] arr, String target) {
         int low = 0, high = arr.length - 1;
         int comparisons = 0;
@@ -62,7 +59,6 @@ public class problem5 {
         return -1;
     }
 
-    // 🔹 Count occurrences using Binary Search
     public static int countOccurrences(String[] arr, String target) {
         int first = firstOccurrence(arr, target);
         int last = lastOccurrence(arr, target);
@@ -71,7 +67,6 @@ public class problem5 {
         return last - first + 1;
     }
 
-    // 🔹 First occurrence (Binary)
     public static int firstOccurrence(String[] arr, String target) {
         int low = 0, high = arr.length - 1;
         int result = -1;
@@ -91,7 +86,6 @@ public class problem5 {
         return result;
     }
 
-    // 🔹 Last occurrence (Binary)
     public static int lastOccurrence(String[] arr, String target) {
         int low = 0, high = arr.length - 1;
         int result = -1;
@@ -111,7 +105,6 @@ public class problem5 {
         return result;
     }
 
-    // 🔹 Main Method
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -131,15 +124,12 @@ public class problem5 {
 
         System.out.println("\nOriginal Logs: " + Arrays.toString(logs));
 
-        // 🔹 Linear Search
         linearFirst(logs, target);
         linearLast(logs, target);
 
-        // 🔹 Sort before Binary Search
         Arrays.sort(logs);
         System.out.println("\nSorted Logs: " + Arrays.toString(logs));
 
-        // 🔹 Binary Search
         int index = binarySearch(logs, target);
 
         // 🔹 Count occurrences

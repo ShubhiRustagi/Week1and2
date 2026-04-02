@@ -19,7 +19,6 @@ class Transaction {
 
 public class week3and4 {
 
-    // 🔹 Bubble Sort (by fee)
     public static void bubbleSort(List<Transaction> list) {
         int n = list.size();
         int passes = 0, swaps = 0;
@@ -44,7 +43,6 @@ public class week3and4 {
         System.out.println("Passes: " + passes + ", Swaps: " + swaps);
     }
 
-    // 🔹 Insertion Sort (by fee + timestamp)
     public static void insertionSort(List<Transaction> list) {
         for (int i = 1; i < list.size(); i++) {
             Transaction key = list.get(i);
@@ -60,7 +58,6 @@ public class week3and4 {
         System.out.println("\nInsertion Sort (fee + timestamp): " + list);
     }
 
-    // 🔹 Compare by fee, then timestamp
     private static int compare(Transaction t1, Transaction t2) {
         if (t1.fee != t2.fee) {
             return Double.compare(t1.fee, t2.fee);
@@ -68,7 +65,6 @@ public class week3and4 {
         return t1.timestamp.compareTo(t2.timestamp);
     }
 
-    // 🔹 Find high-fee outliers (>50)
     public static void findOutliers(List<Transaction> list) {
         System.out.print("\nHigh-fee outliers (>50): ");
         boolean found = false;
